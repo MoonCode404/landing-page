@@ -10,11 +10,11 @@
         </p>
     </div>
 
-    <form class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" action="/subscribe" method="POST">
+    <form class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" name="contact" method="POST" netlify>
         <div
             class="w-full h-14 flex flex-col justify-center items-start border border-gray-medium rounded-lg overflow-hidden md:h-12 lg:h-14 2xl:h-24">
             <label for="email" class="sr-only">Introduce tu correo electrónico</label>
-            <input type="email" id="email-subscribe" name="email" placeholder="Introduce tu correo electrónico" required
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required
                 class="w-full h-full p-4 font-normal text-base leading-[20px] text-blue-dark placeholder:text-[#B4B8BD] focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent md:text-sm lg:text-base 2xl:text-2xl"
                 aria-required="true" aria-label="Introduce tu correo electrónico">
         </div>
