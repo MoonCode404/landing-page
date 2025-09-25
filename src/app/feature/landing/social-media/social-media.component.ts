@@ -1,8 +1,9 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'mc-social-media',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './social-media.component.html',
   styleUrl: './social-media.component.scss'
 })
