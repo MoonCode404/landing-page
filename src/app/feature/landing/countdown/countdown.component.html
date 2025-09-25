@@ -8,7 +8,7 @@
 
         <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
             aria-live="off">
-            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">45</span>
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().days }}</span>
             <span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Días</span>
             <!-- <div
                 class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">
@@ -18,20 +18,20 @@
 
         <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
             aria-live="off">
-            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">12</span>
-            <span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Hrs.</span>
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().hours }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Hrs.</span>
         </div>
 
         <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
             aria-live="off">
-            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">12</span>
-            <span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Min.</span>
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().minutes }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Min.</span>
         </div>
 
         <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
             aria-live="off">
-            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">56</span>
-            <span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Seg.</span>
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().seconds }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Seg.</span>
         </div>
 
     </div>
