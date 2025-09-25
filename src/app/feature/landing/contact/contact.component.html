@@ -10,7 +10,8 @@
         </p>
     </div>
 
-    <form class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" name="contact" netlify>
+    <form class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" name="contact" netlify-honeypot="bot-field" action="/" method="POST" netlify>
+        <input type="hidden" name="form-name" value="contact" />
         <div
             class="w-full h-14 flex flex-col justify-center items-start border border-gray-medium rounded-lg overflow-hidden md:h-12 lg:h-14 2xl:h-24">
             <label for="email" class="sr-only">Introduce tu correo electrónico</label>
