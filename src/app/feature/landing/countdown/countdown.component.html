@@ -1,0 +1,38 @@
+<section class="flex flex-col items-center w-full bg-gray-light p-5 py-16 gap-12 md:py-12 md:gap-8 lg:py-14 lg:gap-12 xl:py-16 2xl:py-20">
+    <h2
+        class="font-semibold text-[30px] leading-[38px] text-blue-dark w-full text-center md:text-[28px] md:leading-[36px] md:max-w-[580px] lg:max-w-full lg:text-[30px] lg:leading-[38px] xl:text-4xl 2xl:text-[40px]">
+        ¡Tu nueva experiencia está por comenzar!
+    </h2>
+
+    <div class="flex flex-row justify-between items-center gap-4 w-full md:gap-5 md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" role="timer">
+
+        <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
+            aria-live="off">
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text-[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().days }}</span>
+            <span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Días</span>
+            <!-- <div
+                class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text[40px] lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">
+                45<br><span class="text-sm leading-none font-medium block md:text-[20px] xl:text-2xl 2xl:text-3xl">Días</span>
+            </div> -->
+        </div>
+
+        <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
+            aria-live="off">
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text-[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().hours }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Hrs.</span>
+        </div>
+
+        <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
+            aria-live="off">
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text-[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().minutes }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Min.</span>
+        </div>
+
+        <div class="box-border flex flex-col justify-center items-center w-[70px] h-[82px] bg-white border border-gray-medium rounded-lg md:size-[120px] lg:w-[168px] lg:h-[142px] xl:size-[216px] 2xl:size-[296px]"
+            aria-live="off">
+            <span class="font-bold text-[30px] leading-[38px] text-blue-dark text-center md:text-[40px] md:leading-none lg:text-[56px] xl:text-[64px] 2xl:text-[80px]">{{ timeLeft().seconds }}</span>
+            <span class="text-sm leading-none block md:text-[20px] xl:text-2xl 2xl:text-3xl">Seg.</span>
+        </div>
+
+    </div>
+</section>
