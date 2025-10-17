@@ -1,4 +1,5 @@
 <section class="flex flex-col items-center w-full bg-white p-5 py-16 gap-8 md:py-12 lg:py-14 xl:py-16 2xl:py-20">
+    <p-toast />
     <div class="flex flex-col items-center gap-5 w-full text-center md:gap-2 xl:gap-5 2xl:gap-2">
         <h2
             class="font-semibold text-[30px] leading-[38px] text-[#001528] w-full md:text-[28px] md:leading-9 lg:text-[30px] xl:text-4xl xl:leading-[45px] 2xl:text-[40px]">
@@ -10,19 +11,19 @@
         </p>
     </div>
 
-    <form class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" name="contact" netlify-honeypot="bot-field" action="/" method="POST" netlify>
+    <form [formGroup]="form" (ngSubmit)="onSendSubscription()" class="flex flex-col items-center gap-5 w-full md:flex-row md:max-w-[580px] lg:max-w-[732px] xl:max-w-[926px] 2xl:max-w-[1246px]" name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true" netlify>
         <input type="hidden" name="form-name" value="contact" />
         <div
             class="w-full h-14 flex flex-col justify-center items-start border border-gray-medium rounded-lg overflow-hidden md:h-12 lg:h-14 2xl:h-24">
-            <label for="email" class="sr-only">Introduce tu correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required
+            <label for="email" class="sr-only">Indícanos tu correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Indícanos tu correo electrónico" formControlName="email"
                 class="w-full h-full p-4 font-normal text-base leading-[20px] text-blue-dark placeholder:text-[#B4B8BD] focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent md:text-sm lg:text-base 2xl:text-2xl text-center"
-                aria-required="true" aria-label="Introduce tu correo electrónico">
+                aria-required="true" aria-label="Indícanos tu correo electrónico">
         </div>
 
         <button type="submit" class="w-full h-14 flex items-center justify-center bg-blue-primary rounded-lg md:h-12 lg:h-14 2xl:h-24">
             <span class="font-medium text-base text-white md:text-sm lg:text-base 2xl:text-2xl">
-                Únete a la lista de espera
+                Únete a la lista
             </span>
         </button>
     </form>

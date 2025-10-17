@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
 
 @font-face {
     font-family: 'Geologica';
@@ -73,4 +80,47 @@
     font-weight: 900;
     font-style: normal;
     font-display: swap;
+}
+
+.modal-subscription-success  {
+    &.p-dialog {
+        @apply p-6;
+        
+        @screen md {
+            @apply p-8;
+        }
+    }
+
+    .p-dialog-header {
+        padding: 0;
+
+        @screen lg {
+            @apply px-[100px];
+        }
+
+        @screen xl {
+            @apply px-[93px];
+        }
+
+        @screen 2xl {
+            @apply px-[53px];
+        }
+    }
+
+    .p-dialog-close-button {
+        padding: 0;
+        @apply text-blue-light;
+
+        .p-icon {
+            @apply size-6;
+
+            @screen md {
+                @apply size-8;
+            }
+        }
+    }
+
+    .p-dialog-content {
+        padding: 0;
+    }
 }
