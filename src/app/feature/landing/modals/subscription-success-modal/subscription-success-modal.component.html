@@ -1,0 +1,8 @@
+<div class="flex flex-col justify-content-center items-center gap-8">
+    <img ngSrc="/img/mailing-success.svg" priority alt="Mailing Success" width="308" height="250" class="w-[209px] h-[170px] md:w-[308px] md:h-[250px]" NgOptimizedImage/>
+    <div class="flex flex-col gap-4 text-center md:max-w-[396px] lg:max-w-[576px] xl:max-w-[532px] 2xl:max-w-[614px]">
+        <h2 class="font-semibold text-[32px] leading-[48px] md:text-5xl md:leading-[60px] text-blue-dark">¡Felicitaciones!</h2>
+        <p class="text-lg leading-[24px] text-blue-dark">Gracias por suscribirte, revisa tu correo <span class="font-bold">{{config.data.email}}</span> y obtén un <span class="font-bold">¡20% de DSCTO.!</span> por nuestro lanzamiento.</p>
+    </div>
+    <button class="bg-blue-primary rounded-lg w-full h-14 font-medium text-white text-base md:max-w-[296px]" (click)="onApplyDiscount()">Aplicar mi descuento</button>
+</div>
