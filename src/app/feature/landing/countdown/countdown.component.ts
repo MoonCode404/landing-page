@@ -15,7 +15,7 @@ interface ITimeLeft {
 export class CountdownComponent implements OnInit, OnDestroy {
 
   public timeLeft: WritableSignal<ITimeLeft> = signal<ITimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  private readonly targetDateStr = '2025-10-30T23:59:59';
+  private readonly targetDateStr = '2025-11-15T23:59:59';
   private targetDate: Date = new Date();
   private intervalId: number | undefined;
 
